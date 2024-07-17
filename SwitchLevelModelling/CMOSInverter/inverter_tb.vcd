@@ -1,0 +1,61 @@
+$date
+	Wed May  1 14:03:40 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module inverter_tb $end
+$var wire 1 ! out $end
+$var reg 1 " clk $end
+$var reg 1 # in $end
+$var reg 1 $ rst $end
+$scope module uut $end
+$var wire 1 ! f $end
+$var wire 1 % gnd $end
+$var wire 1 & vdd $end
+$var wire 1 # x $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1&
+0%
+1$
+x#
+1"
+x!
+$end
+#10
+0"
+#20
+0!
+1#
+1"
+#30
+0"
+#40
+1"
+1!
+0#
+#50
+0"
+#60
+1"
+0!
+1#
+#70
+1!
+0#
+0"
+0$
+#80
+1"
+#90
+0"
+1$
+#100
+1"

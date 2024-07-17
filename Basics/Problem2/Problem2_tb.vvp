@@ -1,0 +1,68 @@
+#! /usr/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 9;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x55aa6466cc00 .scope module, "top_module_tb" "top_module_tb" 2 4;
+ .timescale -9 -9;
+v0x55aa64691e50_0 .var "A", 0 0;
+v0x55aa64691f10_0 .var "B", 0 0;
+v0x55aa64691fe0_0 .var "C", 0 0;
+v0x55aa646920e0_0 .net "W", 0 0, L_0x55aa64692440;  1 drivers
+v0x55aa646921b0_0 .net "X", 0 0, L_0x55aa64692530;  1 drivers
+v0x55aa646922a0_0 .net "Y", 0 0, L_0x55aa64692670;  1 drivers
+v0x55aa64692370_0 .net "Z", 0 0, L_0x55aa64692760;  1 drivers
+S_0x55aa6467e990 .scope module, "uut" "top_module" 2 9, 3 3 0, S_0x55aa6466cc00;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /INPUT 1 "c";
+    .port_info 3 /OUTPUT 1 "w";
+    .port_info 4 /OUTPUT 1 "x";
+    .port_info 5 /OUTPUT 1 "y";
+    .port_info 6 /OUTPUT 1 "z";
+v0x55aa6467ec20_0 .net *"_ivl_5", 3 0, L_0x55aa64692880;  1 drivers
+v0x55aa64691800_0 .net "a", 0 0, v0x55aa64691e50_0;  1 drivers
+v0x55aa646918c0_0 .net "b", 0 0, v0x55aa64691f10_0;  1 drivers
+v0x55aa64691960_0 .net "c", 0 0, v0x55aa64691fe0_0;  1 drivers
+v0x55aa64691a20_0 .net "w", 0 0, L_0x55aa64692440;  alias, 1 drivers
+v0x55aa64691b30_0 .net "x", 0 0, L_0x55aa64692530;  alias, 1 drivers
+v0x55aa64691bf0_0 .net "y", 0 0, L_0x55aa64692670;  alias, 1 drivers
+v0x55aa64691cb0_0 .net "z", 0 0, L_0x55aa64692760;  alias, 1 drivers
+L_0x55aa64692440 .part L_0x55aa64692880, 3, 1;
+L_0x55aa64692530 .part L_0x55aa64692880, 2, 1;
+L_0x55aa64692670 .part L_0x55aa64692880, 1, 1;
+L_0x55aa64692760 .part L_0x55aa64692880, 0, 1;
+L_0x55aa64692880 .concat [ 1 1 1 1], v0x55aa64691fe0_0, v0x55aa64691f10_0, v0x55aa64691f10_0, v0x55aa64691e50_0;
+    .scope S_0x55aa6466cc00;
+T_0 ;
+    %vpi_call 2 23 "$dumpfile", "Problem2_tb.vcd" {0 0 0};
+    %vpi_call 2 24 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x55aa6466cc00 {0 0 0};
+    %pushi/vec4 1, 0, 1;
+    %assign/vec4 v0x55aa64691e50_0, 0;
+    %pushi/vec4 1, 0, 1;
+    %assign/vec4 v0x55aa64691f10_0, 0;
+    %pushi/vec4 1, 0, 1;
+    %assign/vec4 v0x55aa64691fe0_0, 0;
+    %delay 20, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v0x55aa64691e50_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v0x55aa64691f10_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v0x55aa64691fe0_0, 0;
+    %delay 20, 0;
+    %vpi_call 2 35 "$display", "Simulation complete, results are available." {0 0 0};
+    %vpi_call 2 36 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "Problem2_tb.v";
+    "./Problem2.v";

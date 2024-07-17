@@ -1,0 +1,80 @@
+$date
+	Sun May 12 15:06:15 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module CMOSExor_tb $end
+$var wire 1 ! Out $end
+$var reg 1 " A $end
+$var reg 1 # B $end
+$var reg 1 $ clk $end
+$var reg 1 % rst $end
+$scope module uut $end
+$var wire 1 & connect1 $end
+$var wire 1 ' connect2 $end
+$var wire 1 ( connect3 $end
+$var wire 1 ) connect4 $end
+$var wire 1 * gnd $end
+$var wire 1 " in_1 $end
+$var wire 1 # in_2 $end
+$var wire 1 + inv_out1 $end
+$var wire 1 , inv_out2 $end
+$var wire 1 ! out $end
+$var wire 1 - vdd $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1-
+1,
+1+
+0*
+0)
+z(
+1'
+z&
+0%
+0$
+0#
+0"
+0!
+$end
+#10
+1$
+#20
+1&
+1!
+z)
+0,
+z'
+0(
+1#
+1%
+0$
+#30
+z&
+0)
+1,
+1'
+z(
+0#
+0+
+1!
+1"
+1$
+#40
+1&
+z)
+0,
+z'
+0!
+0(
+1#
+0$
+#50
+1$
