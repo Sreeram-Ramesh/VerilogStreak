@@ -1,0 +1,10 @@
+Controls:
+
+1. Shift + Right Click: Paste
+2. Select multiple lines + d: delete lines
+2. F8: TagBar
+3. Select lines + gc: Comment
+4. Select comments + gc: Line
+5. Double click and then :wq!: write and quit
+6. Double click and then :q!: quit
+7. Double ESC or Crtl + C: Command mode

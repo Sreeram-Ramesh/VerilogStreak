@@ -1,4 +1,4 @@
-# DAY 1
+## DAY 1
 
 <details>
 <summary>Problem 1</summary>
@@ -35,6 +35,8 @@ One potential source of confusion that should perhaps be clarified now: The gree
 <br>
 </details>
 
+## DAY 2
+
 <details>
 <summary>Problem 3</summary>
 <br>
@@ -43,6 +45,30 @@ Create a module that implements a NOT gate.
 This circuit is similar to wire, but with a slight difference. When making the connection from the wire in to the wire out we're going to implement an inverter (or "NOT-gate") instead of a plain wire.
 
 Use an assign statement. The assign statement will continuously drive the inverse of in onto wire out.
+<br>
+</details>
+
+<details>
+<summary>Problem 4</summary>
+<br>
+Create a module that implements an AND gate.
+
+<br>
+
+This circuit now has three wires (a, b, and out). Wires a and b already have values driven onto them by the input ports. But wire out currently is not driven by anything. Write an assign statement that drives out with the AND of signals a and b.
+
+Note that this circuit is very similar to the NOT gate, just with one more input. If it sounds different, it's because I've started describing signals as being driven (has a known value determined by something attached to it) or not driven by something. Input wires are driven by something outside the module. assign statements will drive a logic level onto a wire. As you might expect, a wire cannot have more than one driver (what is its logic level if there is?), and a wire that has no drivers will have an undefined value (often treated as 0 when synthesizing hardware).
+<br>
+</details>
+
+<details>
+<summary>Problem 5</summary>
+<br>
+Create a module that implements a NOR gate. A NOR gate is an OR gate with its output inverted. A NOR function needs two operators when written in Verilog.
+
+<br>
+
+An assign statement drives a wire (or "net", as it's more formally called) with a value. This value can be as complex a function as you want, as long as it's a combinational (i.e., memory-less, with no hidden state) function. An assign statement is a continuous assignment because the output is "recomputed" whenever any of its inputs change, forever, much like a simple logic gate.
 <br>
 </details>
 
