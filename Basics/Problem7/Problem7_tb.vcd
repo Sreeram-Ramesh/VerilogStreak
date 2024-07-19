@@ -1,0 +1,126 @@
+$date
+	Fri Jul 19 22:27:46 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module top_module_tb $end
+$var wire 1 ! Out2 $end
+$var wire 1 " Out1 $end
+$var reg 1 # A $end
+$var reg 1 $ B $end
+$var reg 1 % C $end
+$var reg 1 & D $end
+$scope module uut $end
+$var wire 1 ' and1_res $end
+$var wire 1 ( and2_res $end
+$var wire 1 # in_1 $end
+$var wire 1 $ in_2 $end
+$var wire 1 % in_3 $end
+$var wire 1 & in_4 $end
+$var wire 1 ) or_res $end
+$var wire 1 " out_1 $end
+$var wire 1 ! out_2 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0)
+0(
+0'
+0&
+0%
+0$
+0#
+0"
+1!
+$end
+#10
+1#
+#20
+0#
+1$
+#30
+0!
+1"
+1)
+1'
+1#
+1%
+#40
+0'
+1(
+0#
+0$
+1&
+#50
+1#
+#60
+1!
+0"
+0)
+0(
+0#
+1$
+0%
+#70
+0!
+1"
+1)
+1'
+1#
+#80
+1!
+0"
+0)
+0'
+0#
+0$
+0&
+#90
+1#
+1%
+#100
+0#
+1$
+#110
+0!
+1"
+1)
+1'
+1#
+#120
+1!
+0"
+0)
+0'
+0#
+0$
+0%
+1&
+#130
+1#
+#140
+0#
+1$
+#150
+0!
+1"
+1)
+1'
+1(
+1#
+1%
+#160
+1!
+0"
+0)
+0'
+0(
+0#
+0$
+0&

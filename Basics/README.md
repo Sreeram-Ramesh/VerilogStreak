@@ -72,7 +72,26 @@ An assign statement drives a wire (or "net", as it's more formally called) with 
 <br>
 </details>
 
+## DAY 3
+
+<details>
+<summary>Problem 6</summary>
+<br>
+Create a module that implements an XNOR gate.
+<br>
+</details>
+
+<details>
+<summary>Problem 7</summary>
+<br>
+Implement the following circuit. Create two intermediate wires (named anything you want) to connect the AND and OR gates together. Note that the wire that feeds the NOT gate is really wire out, so you do not necessarily need to declare a third wire here. Notice how wires are driven by exactly one source (output of a gate), but can feed multiple inputs.
+
+<br>
+
+If you're following the circuit structure in the diagram, you should end up with four assign statements, as there are four signals that need a value assigned.
+<br>
+</details>
+
 ## Acknowledgements
 
  - [HDLBits - Verilog Practice](https://hdlbits.01xz.net/wiki/Main_Page)
-
