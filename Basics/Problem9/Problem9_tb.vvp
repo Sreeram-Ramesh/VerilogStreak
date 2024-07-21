@@ -1,0 +1,57 @@
+#! /usr/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 9;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x55b7da194bd0 .scope module, "top_module_tb" "top_module_tb" 2 4;
+ .timescale -9 -9;
+v0x55b7da1a7bc0_0 .var "A", 2 0;
+v0x55b7da1a7ca0_0 .net "Out_0", 0 0, L_0x55b7da1a80b0;  1 drivers
+v0x55b7da1a7d40_0 .net "Out_1", 0 0, L_0x55b7da1a81a0;  1 drivers
+v0x55b7da1a7de0_0 .net "Out_2", 0 0, L_0x55b7da1a8290;  1 drivers
+v0x55b7da1a7eb0_0 .net "Out_v", 2 0, L_0x55b7da1a7fa0;  1 drivers
+S_0x55b7da194d60 .scope module, "uut" "top_module" 2 10, 3 3 0, S_0x55b7da194bd0;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 3 "vec";
+    .port_info 1 /OUTPUT 3 "out_v";
+    .port_info 2 /OUTPUT 1 "out_0";
+    .port_info 3 /OUTPUT 1 "out_1";
+    .port_info 4 /OUTPUT 1 "out_2";
+L_0x55b7da1a7fa0 .functor BUFZ 3, v0x55b7da1a7bc0_0, C4<000>, C4<000>, C4<000>;
+v0x55b7da194f40_0 .net "out_0", 0 0, L_0x55b7da1a80b0;  alias, 1 drivers
+v0x55b7da1a77b0_0 .net "out_1", 0 0, L_0x55b7da1a81a0;  alias, 1 drivers
+v0x55b7da1a7870_0 .net "out_2", 0 0, L_0x55b7da1a8290;  alias, 1 drivers
+v0x55b7da1a7910_0 .net "out_v", 2 0, L_0x55b7da1a7fa0;  alias, 1 drivers
+v0x55b7da1a79f0_0 .net "vec", 2 0, v0x55b7da1a7bc0_0;  1 drivers
+L_0x55b7da1a80b0 .part v0x55b7da1a7bc0_0, 0, 1;
+L_0x55b7da1a81a0 .part v0x55b7da1a7bc0_0, 1, 1;
+L_0x55b7da1a8290 .part v0x55b7da1a7bc0_0, 2, 1;
+    .scope S_0x55b7da194bd0;
+T_0 ;
+    %vpi_call 2 21 "$dumpfile", "Problem9_tb.vcd" {0 0 0};
+    %vpi_call 2 22 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x55b7da194bd0 {0 0 0};
+    %pushi/vec4 0, 0, 3;
+    %assign/vec4 v0x55b7da1a7bc0_0, 0;
+    %delay 160, 0;
+    %vpi_call 2 27 "$display", "Simulation complete, results are ready" {0 0 0};
+    %vpi_call 2 28 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_0x55b7da194bd0;
+T_1 ;
+    %delay 20, 0;
+    %load/vec4 v0x55b7da1a7bc0_0;
+    %addi 1, 0, 3;
+    %store/vec4 v0x55b7da1a7bc0_0, 0, 3;
+    %jmp T_1;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "Problem9_tb.v";
+    "./Problem9.v";
