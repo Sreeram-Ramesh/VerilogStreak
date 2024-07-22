@@ -127,6 +127,15 @@ In a diagram, a tick mark with a number next to it indicates the width of the ve
 <br>
 </details>
 
+## DAY 6
+
+<details>
+<summary>Problem 10</summary>
+<br>
+Build a combinational circuit that splits an input half-word (16 bits, [15:0] ) into lower [7:0] and upper [15:8] bytes.
+<br>
+</details>
+
 ## Acknowledgements
 
  - [HDLBits - Verilog Practice](https://hdlbits.01xz.net/wiki/Main_Page)
