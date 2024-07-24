@@ -1,0 +1,91 @@
+$date
+	Wed Jul 24 23:38:19 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module top_module_tb $end
+$var wire 6 ! Out_not [5:0] $end
+$var wire 1 " Out_logic $end
+$var wire 3 # Out_bitw [2:0] $end
+$var reg 3 $ A [2:0] $end
+$var reg 3 % B [2:0] $end
+$scope module uut $end
+$var wire 3 & in_1 [2:0] $end
+$var wire 3 ' in_2 [2:0] $end
+$var wire 3 ( out_bitw [2:0] $end
+$var wire 1 " out_logic $end
+$var wire 6 ) out_not [5:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b111111 )
+b0 (
+b0 '
+b0 &
+b0 %
+b0 $
+b0 #
+0"
+b111111 !
+$end
+#20
+b111 #
+b111 (
+b110 !
+b110 )
+1"
+b1 $
+b1 &
+b111 %
+b111 '
+#40
+b101 !
+b101 )
+b10 $
+b10 &
+#60
+b100 !
+b100 )
+b11 $
+b11 &
+#80
+b11 !
+b11 )
+b100 $
+b100 &
+#100
+b10 !
+b10 )
+b101 $
+b101 &
+#120
+b1 !
+b1 )
+b110 $
+b110 &
+#140
+b0 !
+b0 )
+b111 $
+b111 &
+#160
+b111 !
+b111 )
+b0 $
+b0 &
+#180
+b110 !
+b110 )
+b1 $
+b1 &
+#200
+b101 !
+b101 )
+b10 $
+b10 &
