@@ -1,0 +1,100 @@
+$date
+	Thu Jul 25 23:33:07 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module top_module_tb $end
+$var wire 1 ! Out_xor $end
+$var wire 1 " Out_or $end
+$var wire 1 # Out_and $end
+$var reg 4 $ A [3:0] $end
+$scope module uut $end
+$var wire 4 % in [3:0] $end
+$var wire 1 # out_and $end
+$var wire 1 " out_or $end
+$var wire 1 ! out_xor $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 %
+b0 $
+0#
+0"
+0!
+$end
+#20
+1"
+1!
+b1 $
+b1 %
+#40
+1"
+1!
+b10 $
+b10 %
+#60
+0!
+b11 $
+b11 %
+#80
+1"
+1!
+b100 $
+b100 %
+#100
+0!
+b101 $
+b101 %
+#120
+0!
+b110 $
+b110 %
+#140
+1!
+b111 $
+b111 %
+#160
+1!
+b1000 $
+b1000 %
+#180
+0!
+b1001 $
+b1001 %
+#200
+0!
+b1010 $
+b1010 %
+#220
+1!
+b1011 $
+b1011 %
+#240
+0!
+b1100 $
+b1100 %
+#260
+1!
+b1101 $
+b1101 %
+#280
+1!
+b1110 $
+b1110 %
+#300
+1#
+0!
+b1111 $
+b1111 %
+#320
+0"
+0#
+0!
+b0 $
+b0 %
