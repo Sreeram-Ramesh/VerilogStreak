@@ -167,6 +167,25 @@ Look at the simulation waveforms at how the bitwise-OR and logical-OR differ.
 <br>
 </details>
 
+## DAY 9
+
+<details>
+<summary>Problem 13</summary>
+<br>
+Build a combinational circuit with four inputs, in[3:0].
+
+<br>
+There are 3 outputs:
+
+<br>
+
+- out_and: output of a 4-input AND gate.
+- out_or: output of a 4-input OR gate.
+- out_xor: output of a 4-input XOR gate.
+
+<br>
+</details>
+
 
 
 ## Acknowledgements
