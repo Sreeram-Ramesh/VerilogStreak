@@ -1,0 +1,151 @@
+$date
+	Fri Jul 26 23:55:13 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module top_module_tb $end
+$var wire 8 ! Out_4 [7:0] $end
+$var wire 8 " Out_3 [7:0] $end
+$var wire 8 # Out_2 [7:0] $end
+$var wire 8 $ Out_1 [7:0] $end
+$var reg 5 % A [4:0] $end
+$var reg 5 & B [4:0] $end
+$var reg 5 ' C [4:0] $end
+$var reg 5 ( D [4:0] $end
+$var reg 5 ) E [4:0] $end
+$var reg 5 * F [4:0] $end
+$scope module uut $end
+$var wire 5 + in_1 [4:0] $end
+$var wire 5 , in_2 [4:0] $end
+$var wire 5 - in_3 [4:0] $end
+$var wire 5 . in_4 [4:0] $end
+$var wire 5 / in_5 [4:0] $end
+$var wire 5 0 in_6 [4:0] $end
+$var wire 8 1 out_4 [7:0] $end
+$var wire 8 2 out_3 [7:0] $end
+$var wire 8 3 out_2 [7:0] $end
+$var wire 8 4 out_1 [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1001 4
+b11010000 3
+b10001000 2
+b1111111 1
+b11111 0
+b10000 /
+b1000 .
+b1000 -
+b111 ,
+b1 +
+b11111 *
+b10000 )
+b1000 (
+b1000 '
+b111 &
+b1 %
+b1001 $
+b11010000 #
+b10001000 "
+b1111111 !
+$end
+#20
+b10011000 "
+b10011000 2
+b1010000 #
+b1010000 3
+b1011 $
+b1011 4
+b1001 (
+b1001 .
+b1101 &
+b1101 ,
+#30
+b1011010 #
+b1011010 3
+b1101 '
+b1101 -
+#40
+b10101000 "
+b10101000 2
+b11011010 #
+b11011010 3
+b10100 $
+b10100 4
+b1010 (
+b1010 .
+b10011 &
+b10011 ,
+b10 %
+b10 +
+#60
+b10111000 "
+b10111000 2
+b10110 $
+b10110 4
+b1100100 #
+b1100100 3
+b11111111 !
+b11111111 1
+b1011 (
+b1011 .
+b11001 &
+b11001 ,
+b10010 '
+b10010 -
+b10001 )
+b10001 /
+#80
+b11001000 "
+b11001000 2
+b11100100 #
+b11100100 3
+b11111 $
+b11111 4
+b1100 (
+b1100 .
+b11111 &
+b11111 ,
+b11 %
+b11 +
+#90
+b11101110 #
+b11101110 3
+b10111 '
+b10111 -
+#100
+b11011000 "
+b11011000 2
+b1101110 #
+b1101110 3
+b11001 $
+b11001 4
+b1101 (
+b1101 .
+b101 &
+b101 ,
+#120
+b11111000 #
+b11111000 3
+b100010 $
+b100010 4
+b1111111 !
+b1111111 1
+b11101001 "
+b11101001 2
+b1110 (
+b1110 .
+b1011 &
+b1011 ,
+b11100 '
+b11100 -
+b100 %
+b100 +
+b10010 )
+b10010 /

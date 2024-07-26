@@ -3,8 +3,8 @@
 
 module top_module_tb;
 
-	reg [4,0] A, B, C, D, E, F;
-	wire [7,0] Out_1, Out_2, Out_3, Out_4;
+	reg [4:0] A, B, C, D, E, F;
+	wire [7:0] Out_1, Out_2, Out_3, Out_4;
 
 	top_module uut(
 
