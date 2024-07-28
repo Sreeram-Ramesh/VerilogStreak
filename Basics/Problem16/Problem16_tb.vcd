@@ -1,0 +1,41 @@
+$date
+	Sun Jul 28 22:54:17 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module top_module_tb $end
+$var wire 32 ! Out_1 [31:0] $end
+$var reg 8 " A [7:0] $end
+$scope module uut $end
+$var wire 8 # in_1 [7:0] $end
+$var wire 32 $ out_1 [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b11111111111111111111111111111101 $
+b11111101 #
+b11111101 "
+b11111111111111111111111111111101 !
+$end
+#20
+b101 !
+b101 $
+b101 "
+b101 #
+#40
+b11111111111111111111111111110001 !
+b11111111111111111111111111110001 $
+b11110001 "
+b11110001 #
+#60
+b1111 !
+b1111 $
+b1111 "
+b1111 #
+#80
