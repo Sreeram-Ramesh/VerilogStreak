@@ -216,7 +216,33 @@ Build a circuit that sign-extends an 8-bit number to 32 bits. This requires a co
 <br>
 </details>
 
+## Day 13
 
+<details>
+<summary>Problem 17</summary>
+<br>
+Given five 1-bit signals (a, b, c, d, and e), compute all 25 pairwise one-bit comparisons in the 25-bit output vector. The output should be 1 if the two bits being compared are equal.
+
+<br>
+
+out[24] = ~a ^ a;   // a == a, so out[24] is always 1.<br>
+out[23] = ~a ^ b;<br>
+out[22] = ~a ^ c;<br>
+...<br>
+out[ 1] = ~e ^ d;<br>
+out[ 0] = ~e ^ e;
+
+<br>
+
+As the diagram shows, this can be done more easily using the replication and concatenation operators.
+
+<br>
+
+The top vector is a concatenation of 5 repeats of each input.
+<br>
+The bottom vector is 5 repeats of a concatenation of the 5 inputs
+<br>
+</details>
 
 ## Acknowledgements
 
