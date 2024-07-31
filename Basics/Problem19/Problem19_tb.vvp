@@ -1,0 +1,82 @@
+#! /usr/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 9;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x561c5e5428c0 .scope module, "top_module_tb" "top_module_tb" 2 4;
+ .timescale -9 -9;
+v0x561c5e568850_0 .var "A", 3 0;
+v0x561c5e568910_0 .net "Out_1", 0 0, L_0x561c5e568fc0;  1 drivers
+v0x561c5e568a20_0 .net "Out_2", 0 0, L_0x561c5e569630;  1 drivers
+S_0x561c5e552b00 .scope module, "uut" "top_module" 2 9, 3 13 0, S_0x561c5e5428c0;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 4 "in_1";
+    .port_info 1 /OUTPUT 1 "out_1";
+    .port_info 2 /OUTPUT 1 "out_2";
+v0x561c5e5685f0_0 .net "in_1", 3 0, v0x561c5e568850_0;  1 drivers
+v0x561c5e5686b0_0 .net "out_1", 0 0, L_0x561c5e568fc0;  alias, 1 drivers
+v0x561c5e568750_0 .net "out_2", 0 0, L_0x561c5e569630;  alias, 1 drivers
+S_0x561c5e552d30 .scope module, "uut" "xor_gate" 3 18, 3 3 0, S_0x561c5e552b00;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 4 "in_1";
+    .port_info 1 /OUTPUT 1 "out_1";
+    .port_info 2 /OUTPUT 1 "out_2";
+L_0x561c5e568c50 .functor XOR 1, L_0x561c5e568b10, L_0x561c5e568bb0, C4<0>, C4<0>;
+L_0x561c5e568de0 .functor XOR 1, L_0x561c5e568c50, L_0x561c5e568d40, C4<0>, C4<0>;
+L_0x561c5e568fc0 .functor XOR 1, L_0x561c5e568de0, L_0x561c5e568ef0, C4<0>, C4<0>;
+L_0x561c5e569250 .functor AND 1, L_0x561c5e5690d0, L_0x561c5e569170, C4<1>, C4<1>;
+L_0x561c5e569430 .functor AND 1, L_0x561c5e569250, L_0x561c5e569390, C4<1>, C4<1>;
+L_0x561c5e569630 .functor AND 1, L_0x561c5e569430, L_0x561c5e569540, C4<1>, C4<1>;
+v0x561c5e542a50_0 .net *"_ivl_1", 0 0, L_0x561c5e568b10;  1 drivers
+v0x561c5e567940_0 .net *"_ivl_11", 0 0, L_0x561c5e568ef0;  1 drivers
+v0x561c5e567a20_0 .net *"_ivl_15", 0 0, L_0x561c5e5690d0;  1 drivers
+v0x561c5e567ae0_0 .net *"_ivl_17", 0 0, L_0x561c5e569170;  1 drivers
+v0x561c5e567bc0_0 .net *"_ivl_18", 0 0, L_0x561c5e569250;  1 drivers
+v0x561c5e567cf0_0 .net *"_ivl_21", 0 0, L_0x561c5e569390;  1 drivers
+v0x561c5e567dd0_0 .net *"_ivl_22", 0 0, L_0x561c5e569430;  1 drivers
+v0x561c5e567eb0_0 .net *"_ivl_25", 0 0, L_0x561c5e569540;  1 drivers
+v0x561c5e567f90_0 .net *"_ivl_3", 0 0, L_0x561c5e568bb0;  1 drivers
+v0x561c5e568070_0 .net *"_ivl_4", 0 0, L_0x561c5e568c50;  1 drivers
+v0x561c5e568150_0 .net *"_ivl_7", 0 0, L_0x561c5e568d40;  1 drivers
+v0x561c5e568230_0 .net *"_ivl_8", 0 0, L_0x561c5e568de0;  1 drivers
+v0x561c5e568310_0 .net "in_1", 3 0, v0x561c5e568850_0;  alias, 1 drivers
+v0x561c5e5683f0_0 .net "out_1", 0 0, L_0x561c5e568fc0;  alias, 1 drivers
+v0x561c5e5684b0_0 .net "out_2", 0 0, L_0x561c5e569630;  alias, 1 drivers
+L_0x561c5e568b10 .part v0x561c5e568850_0, 3, 1;
+L_0x561c5e568bb0 .part v0x561c5e568850_0, 2, 1;
+L_0x561c5e568d40 .part v0x561c5e568850_0, 1, 1;
+L_0x561c5e568ef0 .part v0x561c5e568850_0, 0, 1;
+L_0x561c5e5690d0 .part v0x561c5e568850_0, 3, 1;
+L_0x561c5e569170 .part v0x561c5e568850_0, 2, 1;
+L_0x561c5e569390 .part v0x561c5e568850_0, 1, 1;
+L_0x561c5e569540 .part v0x561c5e568850_0, 0, 1;
+    .scope S_0x561c5e5428c0;
+T_0 ;
+    %vpi_call 2 13 "$dumpfile", "Problem19_tb.vcd" {0 0 0};
+    %vpi_call 2 14 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x561c5e5428c0 {0 0 0};
+    %pushi/vec4 0, 0, 4;
+    %store/vec4 v0x561c5e568850_0, 0, 4;
+    %delay 20, 0;
+    %pushi/vec4 10, 0, 4;
+    %store/vec4 v0x561c5e568850_0, 0, 4;
+    %delay 20, 0;
+    %pushi/vec4 13, 0, 4;
+    %store/vec4 v0x561c5e568850_0, 0, 4;
+    %delay 20, 0;
+    %pushi/vec4 15, 0, 4;
+    %store/vec4 v0x561c5e568850_0, 0, 4;
+    %delay 20, 0;
+    %vpi_call 2 28 "$display", "Simulations complete, results are ready" {0 0 0};
+    %vpi_call 2 29 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "Problem19_tb.v";
+    "./Problem19.v";
