@@ -1,0 +1,151 @@
+$date
+	Thu Aug  1 19:54:13 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module shift_register_tb $end
+$var wire 1 ! Q $end
+$var reg 1 " D $end
+$var reg 1 # clk $end
+$scope module uut $end
+$var wire 1 # clk $end
+$var wire 1 " d $end
+$var wire 1 $ w2 $end
+$var wire 1 % w1 $end
+$var wire 1 ! q $end
+$scope module mydff1 $end
+$var wire 1 # clk $end
+$var wire 1 " d $end
+$var reg 1 % q $end
+$upscope $end
+$scope module mydff2 $end
+$var wire 1 # clk $end
+$var wire 1 % d $end
+$var reg 1 $ q $end
+$upscope $end
+$scope module mydff3 $end
+$var wire 1 # clk $end
+$var wire 1 $ d $end
+$var reg 1 ! q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x%
+x$
+0#
+x"
+x!
+$end
+#5
+1#
+#10
+0#
+#15
+1#
+#20
+0#
+#25
+1#
+#30
+0#
+#35
+1#
+#40
+0#
+#45
+1#
+#50
+0#
+#55
+1#
+#60
+0#
+1"
+#65
+1%
+1#
+#70
+0#
+#75
+1$
+1#
+#80
+0#
+0"
+#85
+1!
+0%
+1#
+#90
+0#
+1"
+#95
+1%
+0$
+1#
+#100
+0#
+0"
+#105
+0!
+1$
+0%
+1#
+#110
+0#
+#115
+0$
+1!
+1#
+#120
+0#
+#125
+0!
+1#
+#130
+0#
+#135
+1#
+#140
+0#
+1"
+#145
+1%
+1#
+#150
+0#
+0"
+#155
+0%
+1$
+1#
+#160
+0#
+#165
+1!
+0$
+1#
+#170
+0#
+#175
+0!
+1#
+#180
+0#
+#185
+1#
+#190
+0#
+1"
+#195
+1%
+1#
+#200
+0#

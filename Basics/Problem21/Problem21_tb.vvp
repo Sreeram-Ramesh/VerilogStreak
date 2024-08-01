@@ -1,0 +1,121 @@
+#! /usr/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 9;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x55e6b2bd5050 .scope module, "shift_register_tb" "shift_register_tb" 2 4;
+ .timescale -9 -9;
+v0x55e6b2bed900_0 .var "D", 0 0;
+v0x55e6b2bed9f0_0 .net "Q", 0 0, v0x55e6b2bed330_0;  1 drivers
+v0x55e6b2bedb00_0 .var "clk", 0 0;
+S_0x55e6b2bd51e0 .scope module, "uut" "shift_register" 2 9, 3 16 0, S_0x55e6b2bd5050;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 1 "clk";
+    .port_info 1 /INPUT 1 "d";
+    .port_info 2 /OUTPUT 1 "q";
+v0x55e6b2bed440_0 .net "clk", 0 0, v0x55e6b2bedb00_0;  1 drivers
+v0x55e6b2bed4e0_0 .net "d", 0 0, v0x55e6b2bed900_0;  1 drivers
+v0x55e6b2bed5d0_0 .net "q", 0 0, v0x55e6b2bed330_0;  alias, 1 drivers
+v0x55e6b2bed6d0_0 .net "w1", 0 0, v0x55e6b2bec930_0;  1 drivers
+v0x55e6b2bed7c0_0 .net "w2", 0 0, v0x55e6b2bece10_0;  1 drivers
+S_0x55e6b2bd6af0 .scope module, "mydff1" "d_ff" 3 23, 3 3 0, S_0x55e6b2bd51e0;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 1 "clk";
+    .port_info 1 /INPUT 1 "d";
+    .port_info 2 /OUTPUT 1 "q";
+v0x55e6b2b9dba0_0 .net "clk", 0 0, v0x55e6b2bedb00_0;  alias, 1 drivers
+v0x55e6b2b9d7b0_0 .net "d", 0 0, v0x55e6b2bed900_0;  alias, 1 drivers
+v0x55e6b2bec930_0 .var "q", 0 0;
+E_0x55e6b2b9c4e0 .event posedge, v0x55e6b2b9dba0_0;
+S_0x55e6b2beca50 .scope module, "mydff2" "d_ff" 3 24, 3 3 0, S_0x55e6b2bd51e0;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 1 "clk";
+    .port_info 1 /INPUT 1 "d";
+    .port_info 2 /OUTPUT 1 "q";
+v0x55e6b2becc80_0 .net "clk", 0 0, v0x55e6b2bedb00_0;  alias, 1 drivers
+v0x55e6b2becd40_0 .net "d", 0 0, v0x55e6b2bec930_0;  alias, 1 drivers
+v0x55e6b2bece10_0 .var "q", 0 0;
+S_0x55e6b2becf20 .scope module, "mydff3" "d_ff" 3 25, 3 3 0, S_0x55e6b2bd51e0;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 1 "clk";
+    .port_info 1 /INPUT 1 "d";
+    .port_info 2 /OUTPUT 1 "q";
+v0x55e6b2bed180_0 .net "clk", 0 0, v0x55e6b2bedb00_0;  alias, 1 drivers
+v0x55e6b2bed270_0 .net "d", 0 0, v0x55e6b2bece10_0;  alias, 1 drivers
+v0x55e6b2bed330_0 .var "q", 0 0;
+    .scope S_0x55e6b2bd6af0;
+T_0 ;
+    %wait E_0x55e6b2b9c4e0;
+    %load/vec4 v0x55e6b2b9d7b0_0;
+    %assign/vec4 v0x55e6b2bec930_0, 0;
+    %jmp T_0;
+    .thread T_0;
+    .scope S_0x55e6b2beca50;
+T_1 ;
+    %wait E_0x55e6b2b9c4e0;
+    %load/vec4 v0x55e6b2becd40_0;
+    %assign/vec4 v0x55e6b2bece10_0, 0;
+    %jmp T_1;
+    .thread T_1;
+    .scope S_0x55e6b2becf20;
+T_2 ;
+    %wait E_0x55e6b2b9c4e0;
+    %load/vec4 v0x55e6b2bed270_0;
+    %assign/vec4 v0x55e6b2bed330_0, 0;
+    %jmp T_2;
+    .thread T_2;
+    .scope S_0x55e6b2bd5050;
+T_3 ;
+    %vpi_call 2 17 "$monitor", $time, " D = %b, Q = %b", v0x55e6b2bed900_0, v0x55e6b2bed9f0_0 {0 0 0};
+    %end;
+    .thread T_3;
+    .scope S_0x55e6b2bd5050;
+T_4 ;
+    %vpi_call 2 23 "$dumpfile", "Problem21_tb.vcd" {0 0 0};
+    %vpi_call 2 24 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x55e6b2bd5050 {0 0 0};
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55e6b2bedb00_0, 0, 1;
+    %delay 60, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55e6b2bed900_0, 0, 1;
+    %delay 20, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55e6b2bed900_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55e6b2bed900_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55e6b2bed900_0, 0, 1;
+    %delay 40, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55e6b2bed900_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55e6b2bed900_0, 0, 1;
+    %delay 40, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55e6b2bed900_0, 0, 1;
+    %delay 10, 0;
+    %vpi_call 2 50 "$display", "Simulations done, results are ready." {0 0 0};
+    %vpi_call 2 51 "$finish" {0 0 0};
+    %end;
+    .thread T_4;
+    .scope S_0x55e6b2bd5050;
+T_5 ;
+    %load/vec4 v0x55e6b2bedb00_0;
+    %inv;
+    %store/vec4 v0x55e6b2bedb00_0, 0, 1;
+    %delay 5, 0;
+    %jmp T_5;
+    .thread T_5;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "Problem21_tb.v";
+    "./Problem21.v";
