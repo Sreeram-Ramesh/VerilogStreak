@@ -372,6 +372,22 @@ The multiplexer is not provided. One possible way to write one is inside an alwa
 <br>
 </details>
 
+## DAY 18
+
+<details>
+<summary>Problem 23</summary>
+<br>
+You are given a module add16 that performs a 16-bit addition. Instantiate two of them to create a 32-bit adder. One add16 module computes the lower 16 bits of the addition result, while the second add16 module computes the upper 16 bits of the result, after receiving the carry-out from the first adder. Your 32-bit adder does not need to handle carry-in (assume 0) or carry-out (ignored), but the internal modules need to in order to function correctly. (In other words, the add16 module performs 16-bit a + b + cin, while your module performs 32-bit a + b).
+
+<br>
+
+Connect the modules together as shown in the diagram below. The provided module add16 has the following declaration:
+<br>
+
+module add16 ( input[15:0] a, input[15:0] b, input cin, output[15:0] sum, output cout );
+<br>
+</details>
+
 ## Acknowledgements
 
  - [HDLBits - Verilog Practice](https://hdlbits.01xz.net/wiki/Main_Page)
