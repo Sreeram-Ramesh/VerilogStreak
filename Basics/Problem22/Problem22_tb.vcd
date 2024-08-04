@@ -1,0 +1,180 @@
+$date
+	Sun Aug  4 22:43:26 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module top_module_tb $end
+$var wire 8 ! Qout [7:0] $end
+$var reg 1 " Clk $end
+$var reg 8 # Din [7:0] $end
+$var reg 2 $ Sel [1:0] $end
+$scope module uut $end
+$var wire 1 " clk $end
+$var wire 8 % din [7:0] $end
+$var wire 2 & sel [1:0] $end
+$var wire 8 ' w3 [7:0] $end
+$var wire 8 ( w2 [7:0] $end
+$var wire 8 ) w1 [7:0] $end
+$var reg 8 * qout [7:0] $end
+$scope module dff1 $end
+$var wire 1 " clk $end
+$var wire 8 + din [7:0] $end
+$var reg 8 , qout [7:0] $end
+$upscope $end
+$scope module dff2 $end
+$var wire 1 " clk $end
+$var wire 8 - din [7:0] $end
+$var reg 8 . qout [7:0] $end
+$upscope $end
+$scope module dff3 $end
+$var wire 1 " clk $end
+$var wire 8 / din [7:0] $end
+$var reg 8 0 qout [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx 0
+bx /
+bx .
+bx -
+bx ,
+b1001010 +
+bx *
+bx )
+bx (
+bx '
+b11 &
+b1001010 %
+b11 $
+b1001010 #
+0"
+bx !
+$end
+#5
+b1001010 )
+b1001010 ,
+b1001010 -
+1"
+#10
+0"
+#15
+b1001010 (
+b1001010 .
+b1001010 /
+1"
+#20
+0"
+b11011010 #
+b11011010 %
+b11011010 +
+#25
+b1001010 !
+b1001010 *
+b11011010 )
+b11011010 ,
+b11011010 -
+b1001010 '
+b1001010 0
+1"
+#30
+0"
+#35
+b11011010 (
+b11011010 .
+b11011010 /
+1"
+#40
+0"
+b11101010 #
+b11101010 %
+b11101010 +
+#45
+b11011010 !
+b11011010 *
+b11101010 )
+b11101010 ,
+b11101010 -
+b11011010 '
+b11011010 0
+1"
+#50
+0"
+#55
+b11101010 (
+b11101010 .
+b11101010 /
+1"
+#60
+0"
+b11101111 #
+b11101111 %
+b11101111 +
+#65
+b11101010 !
+b11101010 *
+b11101111 )
+b11101111 ,
+b11101111 -
+b11101010 '
+b11101010 0
+1"
+#70
+0"
+#75
+b11101111 (
+b11101111 .
+b11101111 /
+1"
+#80
+0"
+b11111010 #
+b11111010 %
+b11111010 +
+#85
+b11101111 !
+b11101111 *
+b11111010 )
+b11111010 ,
+b11111010 -
+b11101111 '
+b11101111 0
+1"
+#90
+0"
+#95
+b11111010 (
+b11111010 .
+b11111010 /
+1"
+#100
+b11011010 !
+b11011010 *
+0"
+b0 $
+b0 &
+b11011010 #
+b11011010 %
+b11011010 +
+#105
+b11011010 )
+b11011010 ,
+b11011010 -
+b11111010 '
+b11111010 0
+1"
+#110
+0"
+#115
+b11011010 (
+b11011010 .
+b11011010 /
+1"
+#120
+0"

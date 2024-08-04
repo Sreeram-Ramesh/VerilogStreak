@@ -8,7 +8,7 @@ module d_ff8(clk, din, qout);
 
     always @(posedge clk) begin
 
-        assign qout = din;
+        qout <= din;
 
     end
 
@@ -19,7 +19,7 @@ module top_module(clk, din, sel, qout);
     input clk;
     input [7:0] din;
     input [1:0] sel;
-    output [7:0] qout;
+    output reg [7:0] qout;
 
     wire [7:0] w1, w2, w3;
 
