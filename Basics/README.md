@@ -435,6 +435,27 @@ If your submission is missing a module add1, you will get an error message that 
 <br>
 </details>
 
+## DAY 20
+
+<details>
+<summary>Problem 25</summary>
+<br>
+Given an 8-bit input vector [7:0], reverse its bit ordering.One drawback of the ripple carry adder (See previous exercise) is that the delay for an adder to compute the carry out (from the carry-in, in the worst case) is fairly slow, and the second-stage adder cannot begin computing its carry-out until the first-stage adder has finished. This makes the adder slow. One improvement is a carry-select adder, shown below. The first-stage adder is the same as before, but we duplicate the second-stage adder, one assuming carry-in=0 and one assuming carry-in=1, then using a fast 2-to-1 multiplexer to select which result happened to be correct.
+
+<br>
+
+In this exercise, you are provided with the same module add16 as the previous exercise, which adds two 16-bit numbers with carry-in and produces a carry-out and 16-bit sum. You must instantiate three of these to build the carry-select adder, using your own 16-bit 2-to-1 multiplexer.
+
+<br>
+
+Connect the modules together as shown in the diagram below. The provided module add16 has the following declaration:
+
+<br>
+
+module add16 ( input[15:0] a, input[15:0] b, input cin, output[15:0] sum, output cout );
+<br>
+</details>
+
 ## Acknowledgements
 
  - [HDLBits - Verilog Practice](https://hdlbits.01xz.net/wiki/Main_Page)
