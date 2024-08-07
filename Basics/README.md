@@ -481,6 +481,23 @@ Use a 32-bit wide XOR gate to invert the b input whenever sub is 1. (This can al
 <br>
 </details>
 
+## DAY 22
+
+<details>
+<summary>Problem 27</summary>
+<br>
+You are given a module my_dff with two inputs and one output (that implements a D flip-flop). Instantiate three of them, then chain them together to make a shift register of length 3. The clk port needs to be connected to all instances.
+
+<br>
+
+The module provided to you is: module my_dff ( input clk, input d, output q );
+
+<br>
+
+Note that to make the internal connections, you will need to declare some wires. Be careful about naming your wires and module instances: the names must be unique.
+<br>
+</details>
+
 ## Acknowledgements
 
  - [HDLBits - Verilog Practice](https://hdlbits.01xz.net/wiki/Main_Page)
